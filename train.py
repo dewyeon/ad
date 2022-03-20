@@ -105,7 +105,7 @@ def copy_files(src, dst, ignores=[]):
 def prep_dirs(root):
     # make embeddings dir
     # embeddings_path = os.path.join(root, 'embeddings')
-    embeddings_path = os.path.join('./', 'embeddings', args.category, str(args.coreset_sampling_ratio), str(args.batch_size), str(args.input_size), str(args.load_size))
+    embeddings_path = os.path.join('./', 'embeddings_0.25', args.category, str(args.coreset_sampling_ratio), str(args.batch_size), str(args.input_size), str(args.load_size))
     os.makedirs(embeddings_path, exist_ok=True)
     # make sample dir
     sample_path = os.path.join(root, 'sample')
